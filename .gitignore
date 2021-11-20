@@ -1,0 +1,13 @@
+node_modules
+.node_history
+.idea
+
+dist/*.html
+gulpfile.js
+index.html
+package-lock.json
+package.json
+shims-vue.d.ts
+tsconfig.json
+webpack.config.js
+

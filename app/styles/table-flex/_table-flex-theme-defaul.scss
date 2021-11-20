@@ -1,0 +1,64 @@
+$cell-padding: 0.4em;
+
+@mixin tm-table-flex-theme-default-mixin {
+  .tm-table-flex.tm-table-flex--theme-default {
+    .tm-table-flex__head {
+      border-bottom: 2px solid darken($grey-color, 40%);
+
+      .tm-table-flex__row {
+        .tm-table-flex__cell {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .tm-table-flex__body {
+      .tm-table-flex__row {
+        .tm-table-flex__cell {
+          border-bottom: 1px solid $grey-color;
+        }
+      }
+    }
+
+    .tm-table-flex__foot {
+      border-top: 2px solid darken($grey-color, 20%);
+
+      .tm-table-flex__row {
+        .tm-table-flex__cell {}
+      }
+    }
+
+    .tm-table-flex__row {
+      .tm-table-flex__cell {
+        padding: $cell-padding;
+        border-right: 1px solid $primary-color;
+
+        &:last-child {
+          border-right: 1px solid transparent;
+        }
+      }
+    }
+
+    &.tm-table-flex--sticky-head {
+      .tm-table-flex__head {
+        background-color: $white-color;
+      }
+    }
+
+    &.tm-table-flex--sticky-foot {
+      .tm-table-flex__foot {
+        background-color: $white-color;
+      }
+    }
+
+    &.tm-table-flex--striped-rows {
+      .tm-table-flex__body {
+        .tm-table-flex__row {
+          &:nth-child(2n+1) {
+            background-color: lighten($grey-color, 15%);
+          }
+        }
+      }
+    }
+  }
+}
