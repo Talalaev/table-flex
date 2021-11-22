@@ -2,7 +2,6 @@ node_modules
 .node_history
 .idea
 
-dist/*.html
 gulpfile.js
 index.html
 package-lock.json
