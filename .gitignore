@@ -3,7 +3,6 @@ node_modules
 .idea
 
 gulpfile.js
-index.html
 package-lock.json
 package.json
 shims-vue.d.ts

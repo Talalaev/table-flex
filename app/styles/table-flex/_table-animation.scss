@@ -1,0 +1,17 @@
+@mixin tm-table-animation {
+  .tm-table-flex.tm-table-flex--animate {
+    animation-name: tm-table-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes tm-table-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+

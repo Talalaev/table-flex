@@ -1,6 +1,7 @@
 @import "variables";
 @import "./table-flex/table-flex";
 @import "./table-flex/table-flex-theme-defaul";
+@import "table-flex/table-animation";
 
 body {
   padding: 0;
@@ -9,6 +10,7 @@ body {
 
 @include tm-table-flex-mixin;
 @include tm-table-flex-theme-default-mixin;
+@include tm-table-animation;
 
 .tm-table-flex {
   .tm-table-flex__row {
